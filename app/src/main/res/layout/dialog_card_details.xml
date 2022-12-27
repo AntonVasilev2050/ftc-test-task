@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/textViewBinNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_dialog_element"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Data for BIN: 12345678" />
+
+    <TextView
+        android:id="@+id/textViewSchemeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/scheme_network"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBinNumber" />
+
+    <TextView
+        android:id="@+id/textViewScheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewSchemeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSchemeLabel"
+        tools:text="Visa" />
+
+    <TextView
+        android:id="@+id/textViewTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/type"
+        app:layout_constraintStart_toEndOf="@+id/textViewSchemeLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSchemeLabel" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewTypeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypeLabel"
+        tools:text="Debit " />
+
+    <TextView
+        android:id="@+id/textViewPrepaidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/prepaid"
+        app:layout_constraintStart_toEndOf="@+id/textViewTypeLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTypeLabel" />
+
+    <TextView
+        android:id="@+id/textViewPrepaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrepaidLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrepaidLabel"
+        tools:text="YesNo" />
+
+    <TextView
+        android:id="@+id/textViewBrandLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="@+id/textViewBankLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBankPhone" />
+
+    <TextView
+        android:id="@+id/textViewBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewBrandLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBrandLabel"
+        tools:text="Visa/Dankort" />
+
+    <TextView
+        android:id="@+id/textViewBankLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bank"
+        app:layout_constraintStart_toStartOf="@+id/textViewSchemeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScheme" />
+
+    <TextView
+        android:id="@+id/textViewBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewBankLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBankLabel"
+        tools:text="Jyske Bank," />
+
+    <TextView
+        android:id="@+id/textViewBankCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewBankName"
+        app:layout_constraintStart_toEndOf="@+id/textViewBankName"
+        tools:text="Hjørring" />
+
+    <TextView
+        android:id="@+id/textViewBankUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/textViewBankLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBankName"
+        tools:text="www.jyskebank.dk" />
+
+    <TextView
+        android:id="@+id/textViewBankPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewBankLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBankUrl"
+        tools:text="+4589893300" />
+
+    <TextView
+        android:id="@+id/textViewCardNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/card_number"
+        app:layout_constraintStart_toStartOf="@+id/textViewBrandLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBrand" />
+
+    <TextView
+        android:id="@+id/textViewCardLengthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/length"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCardNumberLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCardNumberLabel" />
+
+    <TextView
+        android:id="@+id/textViewCardLUHNLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/luhn"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCardLengthLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewCardLengthLabel" />
+
+    <TextView
+        android:id="@+id/textViewCardNumberLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewCardLengthLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCardLengthLabel"
+        tools:text="16" />
+
+    <TextView
+        android:id="@+id/textViewCardNumberLUHN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewCardLUHNLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCardLUHNLabel"
+        tools:text="Yes" />
+
+    <TextView
+        android:id="@+id/textViewCountryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCardNumberLabel"
+        app:layout_constraintStart_toStartOf="@+id/textViewTypeLabel" />
+
+    <TextView
+        android:id="@+id/textViewCountryAlph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountryLabel"
+        tools:text="DK" />
+
+    <TextView
+        android:id="@+id/textViewCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCountryAlph2"
+        app:layout_constraintStart_toEndOf="@+id/textViewCountryAlph2"
+        tools:text="Denmark" />
+
+    <TextView
+        android:id="@+id/textViewCountryLatLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountryAlph2"
+        tools:text="(latitude: 56, longitude: 10)" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
